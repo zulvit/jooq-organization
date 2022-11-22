@@ -4,7 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e76ab73-e681-4b19-9287-16eb1fc8469c" name="Changes" comment="" />
+    <list default="true" id="1e76ab73-e681-4b19-9287-16eb1fc8469c" name="Changes" comment="- In the topNByDelivered method, the amount is calculated in the request itself&#10;- Update in DAO updates records with one command&#10;- Test data is no longer deleted in each test&#10;- The findById method uses Optional.of()">
+      <change afterPath="$PROJECT_DIR$/jooq-generated/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/DefaultCatalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/Indexes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/Keys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/Public.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/Sequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/Tables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/FlywaySchemaHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/Organizations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/Overhead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/pojos/FlywaySchemaHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/pojos/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/pojos/Organizations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/pojos/Overhead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/pojos/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/records/FlywaySchemaHistoryRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/records/InvoiceRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/records/OrganizationsRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/records/OverheadRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jooq-generated/src/main/java/generated/tables/records/ProductsRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/dao/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/dao/InvoiceDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/dao/OrganizationDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/dao/OverheadDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/dao/ProductDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/entity/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/entity/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/entity/Overhead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/flyway/FlywayInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/flyway/JDBCCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/java/ru/zulvit/reports/PersonalizedReports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/resources/db/V1__create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/main/resources/db/V2__insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/test/java/ru/zulvit/dao/InvoiceDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/test/java/ru/zulvit/dao/OrganizationDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/test/java/ru/zulvit/dao/OverheadDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization/src/test/java/ru/zulvit/dao/ProductDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +63,47 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-organization" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-organization" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-organization" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="jooq" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HtgLLA1cqrIFW1YvdyVcN2YZU7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,9 +115,67 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/savva/IdeaProjects/jooq-organization",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\savva\IdeaProjects\jooq-organization" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.jooq-organization [generateJooq]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.zulvit.Main" />
+      <module name="jooq-organization.organization.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.zulvit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jooq-organization [generateJooq]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateJooq" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.jooq-organization [generateJooq]" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,8 +184,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669109739273</updated>
+      <workItem from="1669109742207" duration="506000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -52,5 +201,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- In the topNByDelivered method, the amount is calculated in the request itself&#10;- Update in DAO updates records with one command&#10;- Test data is no longer deleted in each test&#10;- The findById method uses Optional.of()" />
+    <option name="LAST_COMMIT_MESSAGE" value="- In the topNByDelivered method, the amount is calculated in the request itself&#10;- Update in DAO updates records with one command&#10;- Test data is no longer deleted in each test&#10;- The findById method uses Optional.of()" />
   </component>
 </project>
